@@ -7,6 +7,9 @@ import io.grpc.ManagedChannel;
 import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 import org.springframework.stereotype.Component;
 
+/**
+ * RPC 데이터 전송
+ */
 @Component
 public class GrpcRecordClient {
     private final RecordServiceGrpc.RecordServiceBlockingStub blockingStub;

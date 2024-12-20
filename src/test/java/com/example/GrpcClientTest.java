@@ -14,7 +14,7 @@ class GrpcClientTest {
     private GrpcRecordClient grpcRecordClient;
 
     @Test
-    void 송수신() {
+    void 전송() {
         //given
         RecordProto.RecordRequest request = RecordProto.RecordRequest.newBuilder()
                 .setWorkflowId(1L)
@@ -22,10 +22,8 @@ class GrpcClientTest {
                 .build();
         //when
         RecordProto.RecordResponse record = grpcRecordClient.createRecord(request);
-
-
-        Assertions.assertEquals(99, record.getRank());
         //then
+        Assertions.assertEquals(99, record.getRank());
     }
 
 

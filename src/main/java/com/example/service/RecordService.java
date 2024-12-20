@@ -7,6 +7,9 @@ import com.example.repository.RecordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * 서버단 도메인 비지니스
+ */
 @RequiredArgsConstructor
 @Service
 public class RecordService {

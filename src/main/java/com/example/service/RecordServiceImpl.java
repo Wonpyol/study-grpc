@@ -10,6 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * RPC 수신부 구현체
+ */
 
 @Slf4j
 @RequiredArgsConstructor
